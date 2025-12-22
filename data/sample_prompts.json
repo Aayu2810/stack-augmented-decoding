@@ -1,1 +1,10 @@
+{
+  "prompt": "Solve a math word problem step by step",
+  "subtasks": [
+    "Understand the problem",
+    "Extract variables",
+    "Solve equations",
+    "Verify solution"
+  ]
+}
 
