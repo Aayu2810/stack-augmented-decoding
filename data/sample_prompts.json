@@ -1,10 +1,9 @@
 {
-  "prompt": "Solve a math word problem step by step",
+  "prompt": "Solve a structured reasoning task",
   "subtasks": [
     "Understand the problem",
-    "Extract variables",
-    "Solve equations",
-    "Verify solution"
+    "Identify constraints",
+    "Solve main problem",
+    "Verify final answer"
   ]
 }
-
