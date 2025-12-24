@@ -145,15 +145,7 @@ processing suitable for educational and research purposes.
 This project is developed solely for academic purposes as part of a college
 submission and demonstrates the application of data structures in modern AI
 systems.
-If you want, I can now:
-- 📄 Write your **full project report**
-- 📊 Create **PPT slides**
-- 🎤 Prepare **viva answers**
-- 📚 Add **references**
 
-Just tell me what you need next 🌟
-
----
 
 ## 📊 Project Outputs
 
