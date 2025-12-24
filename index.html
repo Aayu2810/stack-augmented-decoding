@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stack-Augmented Decoding Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .box {
+            background: #f4f6f7;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+        code {
+            background: #eee;
+            padding: 3px 6px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Stack-Augmented Decoding – Simulation</h1>
+
+<p>
+This webpage presents a <strong>simulation of stack-augmented reasoning</strong>
+used to model how structured prompts can be processed using a stack data structure.
+</p>
+
+<hr>
+
+<h2>🔬 Simulation Overview</h2>
+<div class="box">
+<ul>
+    <li>Input prompt is divided into structured subtasks</li>
+    <li>Subtasks are pushed onto a stack (LIFO)</li>
+    <li>The top task is popped and processed</li>
+    <li>Stack size is recorded after each step</li>
+    <li>Process continues until the stack is empty</li>
+</ul>
+</div>
+
+<h2>⚙️ Simulation Logic</h2>
+<p>
+The simulation is implemented in Python using the following components:
+</p>
+<ul>
+    <li><code>task_stack.py</code> – Stack implementation</li>
+    <li><code>stack_controller.py</code> – Simulation engine</li>
+    <li><code>llm_interface.py</code> – Mock LLM reasoning</li>
+    <li><code>run_demo.py</code> – Executes the simulation</li>
+</ul>
+
+<h2>🧪 Simulation Execution</h2>
+<p>
+The simulation is executed locally using Python. Since GitHub Pages supports only
+static content, the execution results are displayed below.
+</p>
+
+<h2>📊 Simulation Output</h2>
+<p>
+The graph below visualizes how the stack height changes during task execution.
+</p>
+
+<img src="outputs/stack_height_plot.png" alt="Stack Height Simulation Output">
+
+<p>
+Detailed execution steps are available in:
+<code>outputs/execution_log.txt</code>
+</p>
+
+<hr>
+
+<p>
+<strong>Note:</strong> This is a simulation of reasoning behavior. No real LLM is used.
+</p>
+
+</body>
+</html>
