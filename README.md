@@ -146,6 +146,46 @@ This project is developed solely for academic purposes as part of a college
 submission and demonstrates the application of data structures in modern AI
 systems.
 
+---
+
+## 🔬 Simulation of Stack-Augmented Decoding
+
+This project includes a **simulation of stack-augmented reasoning** to demonstrate how large language model (LLM) style task execution can be guided using a stack data structure.
+
+### 🧠 Simulation Objective
+The goal of the simulation is to model how complex prompts can be decomposed into structured subtasks and processed in a Last-In-First-Out (LIFO) manner, similar to a stack-augmented decoder.
+
+### ⚙️ Simulation Workflow
+1. A structured prompt is divided into subtasks.
+2. Subtasks are pushed onto a stack.
+3. The top task is popped and processed.
+4. Stack size is recorded after each step.
+5. The process continues until the stack is empty.
+
+This simulates hierarchical reasoning without using a real LLM.
+
+### 📄 Simulation Logic Location
+- Stack implementation: `src/task_stack.py`
+- Controller (simulation engine): `src/stack_controller.py`
+- Mock LLM reasoning: `src/llm_interface.py`
+- Simulation runner: `experiments/run_demo.py`
+
+---
+
+## 📊 Simulation Outputs
+
+The simulation is executed locally using Python, and the generated outputs are provided below.
+
+### 🔹 Execution Trace
+A step-by-step trace of the simulated reasoning process is available in:
+`outputs/execution_log.txt`
+
+### 🔹 Stack Height Visualization
+
+![Stack Height During Simulation](outputs/stack_height_plot.png)
+
+The graph illustrates how the stack height changes over time as tasks are pushed and popped during the simulation.
+
 
 ## 📊 Project Outputs
 
