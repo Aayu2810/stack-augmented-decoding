@@ -13,6 +13,7 @@ class StackController:
 
     def run(self):
         step = 0
+
         while not self.stack.is_empty():
             step += 1
             current_task = self.stack.pop()
@@ -21,13 +22,9 @@ class StackController:
                 f"Step {step}: Processing -> {current_task}"
             )
 
-            result, new_tasks = mock_llm_process(current_task)
+            result, _ = mock_llm_process(current_task)
             self.execution_log.append(result)
-
-            for task in reversed(new_tasks):
-                self.stack.push(task)
 
             self.stack_history.append(self.stack.size())
 
         return self.stack_history, self.execution_log
-
