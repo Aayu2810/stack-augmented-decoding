@@ -5,14 +5,13 @@ def mock_llm_process(task):
     """
 
     result = f"Completed task: {task}"
-
-    # Simulate hierarchical reasoning
     new_subtasks = []
-    if "Solve" in task:
+
+    # Generate subtasks ONLY once to avoid infinite recursion
+    if task == "Solve main problem":
         new_subtasks = [
-            f"Break down {task}",
-            f"Execute {task}"
+            "Break down main problem",
+            "Execute main problem"
         ]
 
     return result, new_subtasks
-
