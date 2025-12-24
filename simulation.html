@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stack-Augmented Decoding – Animation</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+        #stack {
+            border: 2px solid #333;
+            width: 300px;
+            padding: 10px;
+        }
+        .item {
+            background: #3498db;
+            color: white;
+            padding: 8px;
+            margin: 5px 0;
+            text-align: center;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Stack-Augmented Decoding – Step-by-Step Simulation</h1>
+
+<p>This animation simulates how subtasks are processed using a stack.</p>
+
+<div id="stack"></div>
+
+<button onclick="nextStep()">Next Step</button>
+
+<script>
+    const tasks = [
+        "Understand the problem",
+        "Identify constraints",
+        "Solve main problem",
+        "Verify final answer"
+    ];
+
+    let index = 0;
+    const stackDiv = document.getElementById("stack");
+
+    function nextStep() {
+        if (index < tasks.length) {
+            const div = document.createElement("div");
+            div.className = "item";
+            div.innerText = tasks[index];
+            stackDiv.prepend(div);
+            index++;
+        } else if (stackDiv.children.length > 0) {
+            stackDiv.removeChild(stackDiv.children[0]);
+        }
+    }
+</script>
+
+</body>
+</html>
