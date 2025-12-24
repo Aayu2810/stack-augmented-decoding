@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulation Flow Diagram</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+        .box {
+            border: 2px solid #2c3e50;
+            padding: 15px;
+            margin: 10px;
+            width: 300px;
+        }
+        .arrow {
+            font-size: 24px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Stack-Augmented Decoding – Flow Diagram</h1>
+
+<div class="box">Input Prompt</div>
+<div class="arrow">⬇</div>
+<div class="box">Subtask Decomposition</div>
+<div class="arrow">⬇</div>
+<div class="box">Push Subtasks onto Stack</div>
+<div class="arrow">⬇</div>
+<div class="box">Pop Top Task</div>
+<div class="arrow">⬇</div>
+<div class="box">Mock LLM Processing</div>
+<div class="arrow">⬇</div>
+<div class="box">Record Stack Height</div>
+<div class="arrow">⬇</div>
+<div class="box">Repeat Until Stack Empty</div>
+
+</body>
+</html>
