@@ -1,0 +1,9 @@
+{
+  "prompt": "Solve a structured reasoning task",
+  "subtasks": [
+    "Understand the problem",
+    "Identify constraints",
+    "Solve main problem",
+    "Verify final answer"
+  ]
+}
