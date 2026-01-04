@@ -1,0 +1,19 @@
+<<<<<<< HEAD
+Step 1: Processing -> Understand the problem
+Completed task: Understand the problem
+Step 2: Processing -> Identify constraints
+Completed task: Identify constraints
+Step 3: Processing -> Solve main problem
+Completed task: Solve main problem
+Step 4: Processing -> Verify final answer
+Completed task: Verify final answer
+=======
+Step 1: Processing -> Understand the problem
+Completed task: Understand the problem
+Step 2: Processing -> Identify constraints
+Completed task: Identify constraints
+Step 3: Processing -> Solve main problem
+Completed task: Solve main problem
+Step 4: Processing -> Verify final answer
+Completed task: Verify final answer
+>>>>>>> 73a565866e40957836d6059e854fa58b3611e6c9
